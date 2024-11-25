@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generater</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contaner">
+        <div class="main">
+            <h1>Password generater</h1>
+            <div class="pas-box">
+                <input type="text" id="output-box" disabled>
+            </div>
+            <input type="range" steps="2" min="6" max="32" value="8" id="pas-char">
+
+                <div class="row">
+                    <p>Password length : </p>
+                    <span id="range-val">4</span>
+                </div>
+                <div class="row">
+                <label for="uppercase">you want to include upper-case(A-Z)</label>
+                <input type="checkbox" id="uppercase" checked>
+                </div>
+            <div class="row">
+
+                <label for="lowercase">you want to include Lower-case(a-z)</label>
+                <input type="checkbox" id="lowercase">
+            </div>
+            <div class="row">
+
+                <label for="number">you want to include numbers(0-9)</label>
+                <input type="checkbox" id="number">
+            </div>
+            <div class="row">
+                <label for="spacial-character">you want to include spacial-character(*-/) </label>
+                <input type="checkbox" id="spacial-character">
+                
+            </div>
+            <div class="btn" id="btn_gen">
+                <button>genrate</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
